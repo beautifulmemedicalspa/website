@@ -874,7 +874,7 @@ section {
 .hero-fullscreen {
 	width: 100%;
 	min-height: 100vh;
-	background: url("../img/spa.jpg") center center;
+	background: url("../img/Clinic.jpg") center center;
 	background-size: cover;
 	position: relative;
 	padding: 120px 0 60px;
@@ -883,7 +883,7 @@ section {
 .hero-fullscreen:before {
 	content: "";
 	background: rgba(var(--color-white-rgb), 0.15);
-	backdrop-filter: blur(5px);
+	/*backdrop-filter: blur(2px);*/
 	position: absolute;
 	inset: 0;
 }
