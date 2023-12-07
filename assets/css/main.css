@@ -3213,3 +3213,52 @@ section {
 	background: var(--color-primary);
 	text-decoration: none;
 }
+
+/* TEST LIST */
+.injectables-content ul {
+	list-style: none;
+	padding: 0;
+}
+
+.injectables-content li {
+	padding: 10px;
+	cursor: pointer;
+	position: relative;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.injectables-content .topic {
+	font-weight: bold;
+}
+
+.injectables-content .sub-content {
+	display: none;
+	padding-left: 20px;
+	font-weight: 400;
+}
+
+.injectables-content .sub-content li {
+	padding: 5px;
+}
+
+.dropdown-indicator {
+	font-size: 1.2em;
+	margin-left: 5px;
+	transition: transform 0.3s ease-in-out;
+	display: inline-block;
+	right: 0;
+	position: absolute;
+}
+
+.injectables-content li:hover,
+.injectables-content li.active {
+	background-color: rgba(235, 235, 235, 0.209);
+}
+
+.injectables-content li.active .dropdown-indicator {
+	transform: rotate(180deg);
+}
+
+.injectables-content li.active {
+	color: var(--color-primary);
+}

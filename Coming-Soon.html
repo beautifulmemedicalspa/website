@@ -60,7 +60,7 @@
 					class="logo d-flex align-items-center scrollto me-auto me-lg-0"
 				>
 					<!-- Uncomment the line below if you also wish to use an image logo -->
-					 <!--<img src="assets/img/BM_Logo.png" alt="" />--> 
+					<img src="assets/img/BM_Logo.png" alt="" />
 					<!--<h1>Beautiful Me Medical Spa<span>.</span></h1>-->
 				</a>
 
@@ -153,15 +153,16 @@
 		</header>
 		<!-- End Header -->
 
-		<section
-			id="hero-fullscreen"
-			class="hero-fullscreen d-flex"
-		>
-			<div class="container d-flex flex-column position-relative"
-				 style=""
-				 data-aos="zoom-out">
-				<img src="assets/img/logo_bm.png" alt="" style="width:800px;height:800px;"/>
-				
+		<section id="hero-fullscreen" class="hero-fullscreen d-flex">
+			<div
+				class="container d-flex flex-column position-relative"
+				data-aos="zoom-out"
+			>
+				<img
+					src="assets/img/logo_bm.png"
+					alt=""
+					style="width: 800px; height: 800px"
+				/>
 
 				<!--<h2>Welcome to <span>Beautiful Me Medical Spa </span></h2>
 				<p>Timeless Beauty With An Artistic Touch</p>-->
@@ -181,92 +182,190 @@
 				<div class="container" data-aos="fade-up">
 					<div class="section-header">
 						<h2>Our Services</h2>
-
 					</div>
-
-					<div class="row gy-5">
-						<div class="col-xl-4 col-md-6"
-							 data-aos="zoom-in"
-							 data-aos-delay="200">
+					<div
+						class="row gy-5"
+						style="justify-content: center; align-items: baseline"
+					>
+						<!-- Customized Skincare Solutions -->
+						<div
+							class="col-xl-3 col-md-6"
+							data-aos="zoom-in"
+							data-aos-delay="300"
+						>
 							<div class="service-item">
 								<div class="img">
-									<img src="assets/img/Photos/PCT_0072.jpg"
-										 class="img-fluid"
-										 alt="" />
-								</div>
-								<div class="details position-relative">
-									<!--<div class="icon">
-								<i class="bi bi-activity"></i>
-							</div>-->
-									<a href="#" class="stretched-link">
-										<h3>Injectables</h3>
-									</a>
-									<p>
-										Neuromodulators
-									</p>
-									<p style="padding-left:20px">&emsp;&emsp;&emsp;&emsp;Botox, Xeomin, etc.:&emsp;$14/unit</p>
-									<p>
-										Dermal Fillers
-									</p>
-									<p style="padding-left:20px">Voluma.:&emsp;$1000/syring</p>
-								</div>
-							</div>
-						</div>
-						<!-- End Service Item -->
-
-						<div class="col-xl-4 col-md-6"
-							 data-aos="zoom-in"
-							 data-aos-delay="300">
-							<div class="service-item">
-								<div class="img">
-									<img src="assets/img/Photos/IMG_4269.jpg"
-										 class="img-fluid"
-										 alt="" />
+									<img
+										src="assets/img/Photos/IMG_4269.jpg"
+										class="img-fluid"
+										alt=""
+									/>
 								</div>
 								<div class="details position-relative">
 									<div class="icon">
-										<i class="bi bi-broadcast"></i>
+										<i class="bi bi-lightning"></i>
 									</div>
-									<a href="#" class="stretched-link">
-										<h3>Customized Skincare Solutions</h3>
-									</a>
-									<p>
-										Our personalized skincare treatments are designed to combat
-										signs of aging while enhancing skin health.
-									</p>
+
+									<h3>Laser</h3>
+
+									<div id="injectablesContent" class="injectables-content">
+										<ul>
+											<li class="topic" onclick="toggleSubContent(this)">
+												Plasma
+												<i class="bi bi-chevron-down dropdown-indicator"></i>
+												<ul class="sub-content" style="display: none">
+													<li>Nano Abrasive - $750</li>
+													<li>Semi Abrasive - $1500-$1800</li>
+													<li>Abrasive - $2000-$2500</li>
+												</ul>
+											</li>
+										</ul>
+									</div>
 								</div>
 							</div>
 						</div>
-						<!-- End Service Item -->
+						<!-- End Customized Skincare Solutions -->
 
-						<div class="col-xl-4 col-md-6"
-							 data-aos="zoom-in"
-							 data-aos-delay="400">
+						<!-- Injectables (Bigger Size) -->
+						<div
+							class="col-xl-6 col-md-12"
+							data-aos="zoom-in"
+							data-aos-delay="200"
+						>
 							<div class="service-item">
 								<div class="img">
-									<img src="assets/img/Photos/IMG_4264.jpg"
-										 class="img-fluid"
-										 alt="" />
+									<img
+										src="assets/img/Photos/PCT_0072.jpg"
+										class="img-fluid"
+										alt=""
+									/>
 								</div>
 								<div class="details position-relative">
 									<div class="icon">
-										<i class="bi bi-easel"></i>
+										<i class="bi bi-person-bounding-box"></i>
 									</div>
-									<a href="#" class="stretched-link">
-										<h3>Wellness and Beauty Consultations</h3>
-									</a>
-									<p>
-										Holistic wellness consultations that complement your
-										esthetic treatments, focusing on nutrition, lifestyle, and
-										skincare.
-									</p>
+									<h3>Injectables</h3>
+
+									<div id="injectablesContent" class="injectables-content">
+										<ul>
+											<li class="topic" onclick="toggleSubContent(this)">
+												Neurotoxins
+												<i class="bi bi-chevron-down dropdown-indicator"></i>
+												<ul class="sub-content" style="display: none">
+													<li>Botox - $14/unit</li>
+												</ul>
+											</li>
+											<li class="topic" onclick="toggleSubContent(this)">
+												Fillers
+												<i class="bi bi-chevron-down dropdown-indicator"></i>
+												<ul class="sub-content" style="display: none">
+													<li>Voluma - $1000/syring</li>
+													<li>Juvederm - $650/syring</li>
+													<li>Beloterro - $650/syring</li>
+												</ul>
+											</li>
+											<li class="topic" onclick="toggleSubContent(this)">
+												Lipotropics
+												<i class="bi bi-chevron-down dropdown-indicator"></i>
+												<ul class="sub-content" style="display: none">
+													<li>Submental - $150/ml</li>
+													<li>Body - $125/ml</li>
+												</ul>
+											</li>
+											<li class="topic" onclick="toggleSubContent(this)">
+												PDO Threads
+												<i class="bi bi-chevron-down dropdown-indicator"></i>
+												<ul class="sub-content" style="display: none">
+													<li>Full Face lift - $2500</li>
+													<li>Half Face lift - $1500</li>
+												</ul>
+											</li>
+											<li class="topic" onclick="toggleSubContent(this)">
+												PRP
+												<i class="bi bi-chevron-down dropdown-indicator"></i>
+												<ul class="sub-content" style="display: none">
+													<li>Microneedling - $900</li>
+													<li>Injections - $800</li>
+													<li>Hair Restoration - $1200</li>
+												</ul>
+											</li>
+											<li class="topic" onclick="toggleSubContent(this)">
+												Exosome
+												<i class="bi bi-chevron-down dropdown-indicator"></i>
+												<ul class="sub-content" style="display: none">
+													<li>$1200</li>
+												</ul>
+											</li>
+											<li class="topic" onclick="toggleSubContent(this)">
+												Microneedling
+												<i class="bi bi-chevron-down dropdown-indicator"></i>
+												<ul class="sub-content" style="display: none">
+													<li>$600/session</li>
+												</ul>
+											</li>
+										</ul>
+									</div>
 								</div>
 							</div>
 						</div>
-						<!-- End Service Item -->
+						<!-- End Injectables -->
+
+						<!-- Wellness and Beauty Consultations -->
+						<div
+							class="col-xl-3 col-md-6"
+							data-aos="zoom-in"
+							data-aos-delay="400"
+						>
+							<div class="service-item">
+								<div class="img">
+									<img
+										src="assets/img/Photos/IMG_4264.jpg"
+										class="img-fluid"
+										alt=""
+									/>
+								</div>
+								<div class="details position-relative">
+									<div class="icon">
+										<i class="bi bi-heart-pulse"></i>
+									</div>
+
+									<h3>Medical</h3>
+
+									<div id="injectablesContent" class="injectables-content">
+										<ul>
+											<li class="topic" onclick="toggleSubContent(this)">
+												Weight Management Consultation
+												<i class="bi bi-chevron-down dropdown-indicator"></i>
+												<ul class="sub-content" style="display: none">
+													<li>$250</li>
+												</ul>
+											</li>
+											<li class="topic" onclick="toggleSubContent(this)">
+												Counseling
+												<i class="bi bi-chevron-down dropdown-indicator"></i>
+												<ul class="sub-content" style="display: none">
+													<li>$450/session</li>
+												</ul>
+											</li>
+											<li class="topic" onclick="toggleSubContent(this)">
+												Semaglutide
+												<i class="bi bi-chevron-down dropdown-indicator"></i>
+												<ul class="sub-content" style="display: none">
+													<li>0.1-0.3ml - $87.5/shot or $350/month</li>
+													<li>0.4-0.7ml - $100/shot or $400/month</li>
+													<li>0.8-1.0ml - $125/shot or $500/month</li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End Wellness and Beauty Consultations -->
 					</div>
 				</div>
 			</section>
+
 			<!-- End Services Section -->
 			<!-- ======= About Section ======= -->
 			<section id="about" class="about">
@@ -284,9 +383,11 @@
 					<div class="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="200">
 						<div class="col-lg-5">
 							<div class="about-img">
-								<img src="assets/img/Photos/PCT_0032.jpg"
-									 class="img-fluid"
-									 alt="" />
+								<img
+									src="assets/img/Photos/PCT_0032.jpg"
+									class="img-fluid"
+									alt=""
+								/>
 							</div>
 						</div>
 
@@ -342,14 +443,15 @@
 			<!-- End About Section -->
 			<section id="team" class="team">
 				<div class="container" data-aos="fade-up">
-
 					<div class="row gy-5">
 						<div class="col d-flex" data-aos="zoom-in" data-aos-delay="200">
 							<div class="team-member">
 								<div class="member-img">
-									<img src="assets/img/team/julu.jpeg"
-										 class="img-fluid"
-										 alt="" />
+									<img
+										src="assets/img/team/julu.jpeg"
+										class="img-fluid"
+										alt=""
+									/>
 								</div>
 								<div class="member-info">
 									<div class="social">
@@ -363,14 +465,21 @@
 								</div>
 							</div>
 						</div>
-						<div class="col d-flex content_center" data-aos="zoom-in" data-aos-delay="200">
+						<div
+							class="col d-flex content_center"
+							data-aos="zoom-in"
+							data-aos-delay="200"
+						>
 							<br />
-							<h3>
-								As a Yale-trained Nurse Practitioner, Ju-Lu Huang, FNP-BC, masterfully blends art and science in medical
-								esthetics. With ten years of artistic training and specialized education in anti-aging, regenerative, and
-								procedural medicine, Ju-Lu excels in using combination therapy to enhance your unique beauty. Her
-								approach is gentle, yet transformative, enhancing your inherent beauty for the world to celebrate.
-							</h3>
+							<p style="font-size: x-large">
+								As a Yale-trained Nurse Practitioner, Ju-Lu Huang, FNP-BC,
+								masterfully blends art and science in medical esthetics. With
+								ten years of artistic training and specialized education in
+								anti-aging, regenerative, and procedural medicine, Ju-Lu excels
+								in using combination therapy to enhance your unique beauty. Her
+								approach is gentle, yet transformative, enhancing your inherent
+								beauty for the world to celebrate.
+							</p>
 						</div>
 						<!-- End Team Member -->
 					</div>
@@ -380,20 +489,28 @@
 			<section id="cta" class="cta">
 				<div class="container" data-aos="zoom-out">
 					<div class="row g-5">
-						<div class="col-lg-8 col-md-6 content d-flex flex-column justify-content-center order-last order-md-first">
+						<div
+							class="col-lg-8 col-md-6 content d-flex flex-column justify-content-center order-last order-md-first"
+						>
 							<h3>Start Your <em>Transformation</em> Today</h3>
 							<p>
 								Embrace a new era of ageless beauty with Beautiful Me Medical
 								Spa – where every treatment is a masterpiece.
 							</p>
-							<a class="cta-btn align-self-start" href="#">Book a Free Consultation</a>
+							<a class="cta-btn align-self-start" href="#"
+								>Book a Free Consultation</a
+							>
 						</div>
 
-						<div class="col-lg-4 col-md-6 order-first order-md-last d-flex align-items-center">
+						<div
+							class="col-lg-4 col-md-6 order-first order-md-last d-flex align-items-center"
+						>
 							<div class="img">
-								<img src="assets/img/Photos/IMG_4270.jpg"
-									 alt=""
-									 class="img-fluid" />
+								<img
+									src="assets/img/Photos/IMG_4270.jpg"
+									alt=""
+									class="img-fluid"
+								/>
 							</div>
 						</div>
 					</div>
@@ -407,13 +524,19 @@
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
 								<div class="testimonial-item">
-									<img src="assets/img/testimonials/testimonials-1.jpg"
-										 class="testimonial-img"
-										 alt="" />
+									<img
+										src="assets/img/testimonials/testimonials-1.jpg"
+										class="testimonial-img"
+										alt=""
+									/>
 									<h3>Saul Goodman</h3>
 									<h4>Ceo &amp; Founder</h4>
 									<div class="stars">
-										<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+										<i class="bi bi-star-fill"></i
+										><i class="bi bi-star-fill"></i
+										><i class="bi bi-star-fill"></i
+										><i class="bi bi-star-fill"></i
+										><i class="bi bi-star-fill"></i>
 									</div>
 									<p>
 										<i class="bi bi-quote quote-icon-left"></i>
@@ -437,7 +560,11 @@
 									<h3>Sara Wilsson</h3>
 									<h4>Designer</h4>
 									<div class="stars">
-										<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+										<i class="bi bi-star-fill"></i
+										><i class="bi bi-star-fill"></i
+										><i class="bi bi-star-fill"></i
+										><i class="bi bi-star-fill"></i
+										><i class="bi bi-star-fill"></i>
 									</div>
 									<p>
 										<i class="bi bi-quote quote-icon-left"></i>
@@ -461,7 +588,11 @@
 									<h3>Jena Karlis</h3>
 									<h4>Store Owner</h4>
 									<div class="stars">
-										<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+										<i class="bi bi-star-fill"></i
+										><i class="bi bi-star-fill"></i
+										><i class="bi bi-star-fill"></i
+										><i class="bi bi-star-fill"></i
+										><i class="bi bi-star-fill"></i>
 									</div>
 									<p>
 										<i class="bi bi-quote quote-icon-left"></i>
@@ -484,7 +615,11 @@
 									<h3>Matt Brandon</h3>
 									<h4>Freelancer</h4>
 									<div class="stars">
-										<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+										<i class="bi bi-star-fill"></i
+										><i class="bi bi-star-fill"></i
+										><i class="bi bi-star-fill"></i
+										><i class="bi bi-star-fill"></i
+										><i class="bi bi-star-fill"></i>
 									</div>
 									<p>
 										<i class="bi bi-quote quote-icon-left"></i>
@@ -508,7 +643,11 @@
 									<h3>John Larson</h3>
 									<h4>Entrepreneur</h4>
 									<div class="stars">
-										<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+										<i class="bi bi-star-fill"></i
+										><i class="bi bi-star-fill"></i
+										><i class="bi bi-star-fill"></i
+										><i class="bi bi-star-fill"></i
+										><i class="bi bi-star-fill"></i>
 									</div>
 									<p>
 										<i class="bi bi-quote quote-icon-left"></i>
@@ -528,7 +667,7 @@
 			</section>
 			<!-- End Testimonials Section -->
 			<!-- ======= Pricing Section ======= -->
-			
+
 			<!-- ======= Team Section ======= -->
 			<!-- End Team Section -->
 			<!-- ======= Contact Section ======= -->
@@ -544,10 +683,11 @@
 		</div> -->
 
 				<div class="map">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-121.9968014!3d37.5038762!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fc61090f52c91%3A0xbabf45606e0b002c!2s43625%20Mission%20Blvd%20%23107%2C%20%23102%2C%20Fremont%2C%20CA%2094539!5e0!3m2!1sen!2sus!4v1573133338263"
-							frameborder="0"
-							allowfullscreen></iframe>
-
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-121.9968014!3d37.5038762!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fc61090f52c91%3A0xbabf45606e0b002c!2s43625%20Mission%20Blvd%20%23107%2C%20%23102%2C%20Fremont%2C%20CA%2094539!5e0!3m2!1sen!2sus!4v1573133338263"
+						frameborder="0"
+						allowfullscreen
+					></iframe>
 				</div>
 				<!-- End Google Maps -->
 
@@ -598,41 +738,51 @@
 						</div>
 
 						<div class="col-lg-8">
-							<form action="forms/contact.php"
-								  method="post"
-								  role="form"
-								  class="php-email-form">
+							<form
+								action="forms/contact.php"
+								method="post"
+								role="form"
+								class="php-email-form"
+							>
 								<div class="row">
 									<div class="col-md-6 form-group">
-										<input type="text"
-											   name="name"
-											   class="form-control"
-											   id="name"
-											   placeholder="Your Name"
-											   required />
+										<input
+											type="text"
+											name="name"
+											class="form-control"
+											id="name"
+											placeholder="Your Name"
+											required
+										/>
 									</div>
 									<div class="col-md-6 form-group mt-3 mt-md-0">
-										<input type="email"
-											   class="form-control"
-											   name="email"
-											   id="email"
-											   placeholder="Your Email"
-											   required />
+										<input
+											type="email"
+											class="form-control"
+											name="email"
+											id="email"
+											placeholder="Your Email"
+											required
+										/>
 									</div>
 								</div>
 								<div class="form-group mt-3">
-									<input type="text"
-										   class="form-control"
-										   name="subject"
-										   id="subject"
-										   placeholder="Subject"
-										   required />
+									<input
+										type="text"
+										class="form-control"
+										name="subject"
+										id="subject"
+										placeholder="Subject"
+										required
+									/>
 								</div>
 								<div class="form-group mt-3">
-									<textarea class="form-control"
-											  name="message"
-											  placeholder="Message"
-											  required></textarea>
+									<textarea
+										class="form-control"
+										name="message"
+										placeholder="Message"
+										required
+									></textarea>
 								</div>
 								<div class="my-3">
 									<div class="loading">Loading</div>
@@ -709,13 +859,6 @@
 									<i class="bi bi-chevron-right"></i>
 									<a href="#">Medical</a>
 								</li>
-								<li>
-									<i class="bi bi-chevron-right"></i> <a href="#">Marketing</a>
-								</li>
-								<li>
-									<i class="bi bi-chevron-right"></i>
-									<a href="#">Graphic Design</a>
-								</li>
 							</ul>
 						</div>
 					</div>
@@ -739,7 +882,7 @@
 							<!-- You can delete the links only if you purchased the pro version. -->
 							<!-- Licensing information: https://bootstrapmade.com/license/ -->
 							<!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/herobiz-bootstrap-business-template/ -->
-							Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+							<!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
 						</div>
 					</div>
 
@@ -747,7 +890,7 @@
 						<a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
 						<a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
 						<a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-						<a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+						<!-- <a href="#" class="google-plus"><i class="bi bi-skype"></i></a> -->
 						<a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
 					</div>
 				</div>
@@ -773,5 +916,6 @@
 
 		<!-- Template Main JS File -->
 		<script src="assets/js/main.js"></script>
+		<script src="assets/js/list.js"></script>
 	</body>
 </html>
