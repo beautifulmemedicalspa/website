@@ -636,6 +636,15 @@ section {
 	font-weight: 400;
 }
 
+.imgcontainer {
+	position: absolute;
+	top: 5rem;
+}
+
+.imgcontainer img {
+	width: 500px;
+}
+
 .hero-animated .animated {
 	margin-bottom: 60px;
 	animation: up-down 2s ease-in-out infinite alternate-reverse both;
@@ -656,6 +665,9 @@ section {
 @media (max-width: 575px) {
 	.hero-animated .animated {
 		max-width: 80%;
+	}
+	.imgcontainer img {
+		width: 400px;
 	}
 }
 
