@@ -227,7 +227,8 @@ section {
 }
 .header .headertext {
 	padding: 1rem;
-	font-weight: 600;
+	font-weight: 800;
+	font-size:24px;
 }
 
 .header .headerbutton {
