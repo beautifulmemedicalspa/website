@@ -94,8 +94,8 @@ section {
 }
 
 .section-header h2 {
-	font-size: 48px;
-	font-weight: 300;
+	font-size: 52px;
+	font-weight: 800;
 	margin-bottom: 20px;
 	color: var(--color-secondary);
 }
@@ -103,6 +103,8 @@ section {
 .section-header p {
 	margin: 0 auto;
 	color: var(--color-secondary-light);
+	font-size: 24px;
+	font-weight:600;
 }
 
 @media (min-width: 1280px) {
@@ -228,7 +230,7 @@ section {
 .header .headertext {
 	padding: 1rem;
 	font-weight: 800;
-	font-size:24px;
+	font-size:26px;
 }
 
 .header .headerbutton {
@@ -341,8 +343,8 @@ section {
 		justify-content: space-between;
 		padding: 14px 20px;
 		font-family: var(--font-secondary);
-		font-size: 18px;
-		font-weight: 400;
+		font-size: 22px;
+		font-weight: 800;
 		color: rgba(var(--color-secondary-dark-rgb), 0.7);
 		white-space: nowrap;
 		transition: 0.3s;
@@ -418,9 +420,9 @@ section {
 
 	.navbar .dropdown ul a {
 		padding: 10px 20px;
-		font-size: 15px;
+		font-size: 18px;
 		text-transform: none;
-		font-weight: 400;
+		font-weight: 600;
 		color: rgba(var(--color-white-rgb), 0.5);
 	}
 
@@ -621,7 +623,7 @@ section {
 .hero-animated h2 {
 	margin: 0 0 10px 0;
 	font-size: 48px;
-	font-weight: 300;
+	font-weight: 800;
 	color: var(--color-secondary);
 	font-family: var(--font-secondary);
 }
@@ -1204,7 +1206,7 @@ section {
 .about h3 {
 	color: var(--color-secondary);
 	font-family: var(--font-secondary);
-	font-weight: 300;
+	font-weight: 600;
 	font-size: 32px;
 	margin-bottom: 20px;
 }
@@ -1247,14 +1249,14 @@ section {
 }
 
 .about .tab-content h4 {
-	font-size: 18px;
+	font-size: 22px;
 	margin: 0;
 	font-weight: 700;
 	color: var(--color-secondary);
 }
 
 .about .tab-content i {
-	font-size: 22px;
+	font-size: 26px;
 	line-height: 0;
 	margin-right: 8px;
 	color: var(--color-primary);
@@ -1689,7 +1691,7 @@ section {
 	color: var(--color-secondary-light);
 	font-weight: 800;
 	margin: 10px 0 15px 0;
-	font-size: 24px;
+	font-size: 28px;
 	transition: ease-in-out 0.3s;
 	padding-bottom: 4px;
 	border-bottom: 0.5px solid white;
@@ -2210,16 +2212,16 @@ section {
 }
 
 .team .team-member .member-info h4 {
-	font-weight: 400;
+	font-weight: 600;
 	margin-bottom: 5px;
-	font-size: 24px;
+	font-size: 28px;
 	color: var(--color-white);
 }
 
 .team .team-member .member-info span {
 	display: block;
-	font-size: 16px;
-	font-weight: 400;
+	font-size: 18px;
+	font-weight: 500;
 	color: var(--color-secondary-light);
 }
 
@@ -2354,7 +2356,7 @@ section {
 
 .contact .info-item h4 {
 	padding: 0;
-	font-size: 18px;
+	font-size: 22px;
 	font-weight: 600;
 	margin-bottom: 5px;
 	color: var(--color-secondary);
@@ -2363,7 +2365,8 @@ section {
 .contact .info-item p {
 	padding: 0;
 	margin-bottom: 0;
-	font-size: 14px;
+	font-size: 18px;
+	font-weight:600;
 	color: var(--color-secondary-light);
 }
 
