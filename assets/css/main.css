@@ -104,7 +104,7 @@ section {
 	margin: 0 auto;
 	color: var(--color-secondary-light);
 	font-size: 24px;
-	font-weight:600;
+	font-weight: 600;
 }
 
 @media (min-width: 1280px) {
@@ -230,7 +230,19 @@ section {
 .header .headertext {
 	padding: 1rem;
 	font-weight: 800;
-	font-size:26px;
+	font-size: 26px;
+	font-family: var(--font-secondary);
+}
+
+.header .headernumber {
+	background-color: #3a4753;
+	height: 56px;
+	display: flex;
+	align-items: center;
+	font-size: 28px;
+	font-weight: 800;
+	padding: 29px 1rem;
+	font-family: var(--font-secondary);
 }
 
 .header .headerbutton {
@@ -264,7 +276,9 @@ section {
 
 .header .btn-getstarted,
 .header .btn-getstarted:focus {
-	font-size: 16px;
+	font-size: 28px;
+	font-weight: 800;
+
 	color: var(--color-white);
 	background: var(--color-primary);
 	padding: 8px 23px;
@@ -281,7 +295,8 @@ section {
 
 .headertop .btn-getstarted,
 .headertop .btn-getstarted:focus {
-	font-size: 16px;
+	font-size: 28px;
+	font-weight: 800;
 	color: var(--color-white);
 	background: var(--color-primary);
 	padding: 8px 23px;
@@ -497,6 +512,7 @@ section {
 /*--------------------------------------------------------------
 # Mobile Navigation
 --------------------------------------------------------------*/
+
 @media (max-width: 1279px) {
 	.navbar {
 		position: fixed;
@@ -576,6 +592,16 @@ section {
 
 	.header .headertop {
 		padding-right: 1rem;
+	}
+
+	.header .headernumber {
+		font-size: 14px;
+		padding: 0 1rem;
+	}
+
+	.headertop .btn-getstarted {
+		font-size: 14px;
+		padding: 0 1rem;
 	}
 
 	.header .headertext {
@@ -1157,7 +1183,7 @@ section {
 }
 
 .featured-services .service-item h4 a {
-	color: var(--color-secondary);
+	color: var(--color-white);
 	transition: ease-in-out 0.3s;
 }
 
@@ -1656,7 +1682,7 @@ section {
 }
 
 .services .details {
-	color: #8f9fae;
+	color: white;
 	padding: 50px 30px;
 	margin: -100px 30px 0 30px;
 	transition: all ease-in-out 0.3s;
@@ -1688,7 +1714,7 @@ section {
 }
 
 .services .details h3 {
-	color: var(--color-secondary-light);
+	color: var(--color-white);
 	font-weight: 800;
 	margin: 10px 0 15px 0;
 	font-size: 28px;
@@ -1709,11 +1735,11 @@ section {
 
 .services .service-item:hover .details .icon {
 	background: var(--color-white);
-	border: 2px solid var(--color-secondary);
+	border: 2px solid var(--color-white);
 }
 
 .services .service-item:hover .details .icon i {
-	color: var(--color-secondary);
+	color: var(--color-white);
 }
 
 .services .service-item:hover .img img {
@@ -2366,8 +2392,8 @@ section {
 	padding: 0;
 	margin-bottom: 0;
 	font-size: 18px;
-	font-weight:600;
-	color: var(--color-secondary-light);
+	font-weight: 600;
+	color: var(--color-primary-dark);
 }
 
 .contact .php-email-form {
