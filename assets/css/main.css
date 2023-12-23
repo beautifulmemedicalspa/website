@@ -696,7 +696,10 @@ section {
 		max-width: 80%;
 	}
 	.imgcontainer img {
-		width: 400px;
+		width: 172px;
+	}
+	.imgcontainer{
+		top: 0rem;
 	}
 }
 
@@ -3416,7 +3419,16 @@ section {
 	background-size: cover;
 	background-position: center;
 }
-
+@media (max-width: 768px) {
+	.hero-fullscreen {
+		width: 100%;
+		min-height: 33vh;
+		background: url(../img/BeautifulMe.png) center center;
+		background-size: cover;
+		position: relative;
+		padding: 120px 0 205px;
+	}
+}
 	.carousel__item:nth-child(4) {
 		background: url("../img/Photos/5.png");
 		background-size: cover;
