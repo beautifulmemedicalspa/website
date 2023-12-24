@@ -210,6 +210,17 @@ section {
 	}
 }
 
+@media screen and (max-width: 768px) {
+	.team .row {
+		display: block;
+		text-align: center;
+	}
+
+	.team .d-flex {
+		justify-content: center;
+	}
+}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -671,7 +682,7 @@ section {
 }
 
 .imgcontainer img {
-	width: 600px;
+	width: 400px;
 }
 
 .hero-animated .animated {
@@ -698,7 +709,7 @@ section {
 	.imgcontainer img {
 		width: 172px;
 	}
-	.imgcontainer{
+	.imgcontainer {
 		top: 0rem;
 	}
 }
@@ -1406,18 +1417,22 @@ section {
 --------------------------------------------------------------*/
 .onfocus {
 	padding: 0;
-	height:fit-content;
+	height: fit-content;
 }
 .servicesimg {
 	width: -webkit-fill-available;
 }
-.onfocus h1{
-	font-weight:800;
-	font-size:32px;
+.onfocus h1 {
+	font-weight: 800;
+	font-size: 32px;
 }
 .onfocus .video-play {
 	min-height: 400px;
-	background: linear-gradient( rgba(var(--color-black-rgb), 0.4), rgba(var(--color-black-rgb), 0.7) ), url("../img/onfocus-video-bg.jpg") center center;
+	background: linear-gradient(
+			rgba(var(--color-black-rgb), 0.4),
+			rgba(var(--color-black-rgb), 0.7)
+		),
+		url("../img/onfocus-video-bg.jpg") center center;
 	background-size: cover;
 }
 
@@ -3332,7 +3347,7 @@ section {
 
 .injectables-content .topic {
 	font-weight: bold;
-	font-size:20px;
+	font-size: 20px;
 }
 
 .injectables-content .sub-content {
@@ -3401,17 +3416,17 @@ section {
 	transition: all 0.3s ease-in;
 }
 
-	.carousel__item:nth-child(1) {
-		background: url("../img/Photos/2.png");
-		background-size: cover;
-		background-position: center;
-	}
+.carousel__item:nth-child(1) {
+	background: url("../img/Photos/2.png");
+	background-size: cover;
+	background-position: center;
+}
 
-	.carousel__item:nth-child(2) {
-		background: url("../img/Photos/3.png");
-		background-size: cover;
-		background-position: center;
-	}
+.carousel__item:nth-child(2) {
+	background: url("../img/Photos/3.png");
+	background-size: cover;
+	background-position: center;
+}
 
 .carousel__item:nth-child(3) {
 	/* background: linear-gradient(45deg, #2d35eb 0%, #22c1c3 100%); */
@@ -3419,21 +3434,12 @@ section {
 	background-size: cover;
 	background-position: center;
 }
-@media (max-width: 768px) {
-	.hero-fullscreen {
-		width: 100%;
-		min-height: 33vh;
-		background: url(../img/BeautifulMe.png) center center;
-		background-size: cover;
-		position: relative;
-		padding: 120px 0 205px;
-	}
+
+.carousel__item:nth-child(4) {
+	background: url("../img/Photos/5.png");
+	background-size: cover;
+	background-position: center;
 }
-	.carousel__item:nth-child(4) {
-		background: url("../img/Photos/5.png");
-		background-size: cover;
-		background-position: center;
-	}
 
 .carousel__item:nth-child(5) {
 	background: url("../img/Photos/6.png");
@@ -3476,25 +3482,41 @@ section {
 	transform: translateX(70%) scale(0.8);
 	z-index: 3;
 }
-.slider-container {
-	width: 100%;
-	overflow: hidden;
-	position: relative;
+
+@media (max-width: 768px) {
+	.hero-fullscreen {
+		width: 100%;
+		min-height: 70vh;
+		background: url(../img/BeautifulMe.png) right center;
+		background-size: cover;
+		position: relative;
+		padding: 120px 0 205px;
+	}
+	.imgcontainer {
+		top: 0;
+	}
+	.imgcontainer img {
+		width: 200px;
+	}
 }
 
-.slider {
-	display: flex;
-	transition: transform 0.5s ease;
-}
+@media (max-width: 425px) {
+	.imgcontainer img {
+		width: 172px;
+	}
+	.imgcontainer {
+		top: -50px;
+	}
+	.hero-fullscreen {
+		min-height: 30vh;
+		/* background: url(../img/BeautifulMe.png) center center; */
+	}
 
-.slide {
-	flex: 0 0 100%; /* Makes each slide take up the full width */
-	text-align: center;
-}
-.slider h3{
-	color: white;
-}
-.slider img{
-	max-width: 100%;
-	max-height:100%;
+	.phototext {
+		font-size: 20px !important;
+	}
+
+	h3 {
+		font-size: 32px !important;
+	}
 }
