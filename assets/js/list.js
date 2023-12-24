@@ -18,7 +18,6 @@ const carouselList = document.querySelector(".carousel__list");
 const carouselItems = document.querySelectorAll(".carousel__item");
 const elems = Array.from(carouselItems);
 
-
 const update = function (newActive) {
 	const newActiveIndex = elems.indexOf(newActive);
 
@@ -57,7 +56,6 @@ const findActiveIndex = (items) => {
 	return -1; // Return -1 if no active item is found
 };
 
-
 // Function to advance the carousel to the next item
 const advanceCarousel = function () {
 	try {
@@ -84,4 +82,4 @@ if (elems.length > 0 && findActiveIndex(elems) === -1) {
 }
 
 // Automatically advance the carousel every 3 seconds (3000 milliseconds)
-setInterval(advanceCarousel, 5000);
+// setInterval(advanceCarousel, 5000);
