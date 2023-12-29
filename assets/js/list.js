@@ -100,7 +100,7 @@ function toggleSubContent(element) {
 	}
 
 	// Set an interval for autoscrolling (e.g., every 3 seconds)
-	const autoScrollInterval = setInterval(autoScroll, 3000);
+	const autoScrollInterval = setInterval(autoScroll, 5000);
 
 	// Stop autoscrolling on hover
 	$('.slider-container').hover(
@@ -108,6 +108,6 @@ function toggleSubContent(element) {
 			clearInterval(autoScrollInterval);
 		},
 		function () {
-			autoScrollInterval = setInterval(autoScroll, 3000);
+			autoScrollInterval = setInterval(autoScroll, 5000);
 		}
 	);
