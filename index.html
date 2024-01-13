@@ -1,43 +1,810 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 40px;
-        }
+		<title>Beautiful Me Medical Spa.</title>
+		<meta content="" name="description" />
+		<meta content="" name="keywords" />
 
-        h1 {
-            font-size: 36px;
-            color: #333;
-        }
+		<!-- Favicons -->
+		<link href="assets/img/BM_Logo.png" rel="icon" />
+		<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-        p {
-            font-size: 18px;
-            color: #666;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <img src="assets/img/logo_bm.png" style="height:500px;" />
-        <h2>Coming Soon</h2>
-        <p>We're working on something awesome and can't wait to share it with you!</p>
-        <h2>Soft opening special:</h2>
-        <h2>Kybella $150/ml</h2>
-        <h2>Call 650-773-8048 to schedule your free consultation.</h2>
-    </div>
-</body>
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- Vendor CSS Files -->
+		<link
+			href="assets/vendor/bootstrap/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+			rel="stylesheet"
+		/>
+		<link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+		<link
+			href="assets/vendor/glightbox/css/glightbox.min.css"
+			rel="stylesheet"
+		/>
+		<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+		<!-- Variables CSS Files. Uncomment your preferred color scheme -->
+		<link href="assets/css/variables.css" rel="stylesheet" />
+		<!-- <link href="assets/css/variables-blue.css" rel="stylesheet"> -->
+		<!-- <link href="assets/css/variables-green.css" rel="stylesheet"> -->
+		<!-- <link href="assets/css/variables-orange.css" rel="stylesheet"> -->
+		<!-- <link href="assets/css/variables-purple.css" rel="stylesheet"> -->
+		<!-- <link href="assets/css/variables-red.css" rel="stylesheet"> -->
+		<!-- <link href="assets/css/variables-pink.css" rel="stylesheet"> -->
+
+		<!-- Template Main CSS File -->
+		<link href="assets/css/main.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<!-- ======= Header ======= -->
+
+		<header id="header" class="header fixed-top" data-scrollto-offset="0">
+			<div class="headertop">
+				<div class="headertext">
+					<a href="#contact">Fremont & Los Gatos, CA</a>
+				</div>
+				<div style="display: flex; align-items: center">
+					<div class="headernumber">
+						<a style="color: white" href="tel:6507738048">(650) 773-8048</a>
+					</div>
+					<div class="headerbutton">
+						<a
+							class="btn-getstarted scrollto"
+							href="https://mdwareonline.com/juluhuanginc/sign-in"
+							target="_blank"
+							>Free Consultation</a
+						>
+					</div>
+				</div>
+			</div>
+			<div
+				class="container-fluid d-flex align-items-center justify-content-center"
+			>
+				<a
+					href="index.html"
+					class="logo d-flex align-items-center scrollto me-auto me-lg-0"
+				>
+					<!-- Uncomment the line below if you also wish to use an image logo -->
+					<!-- <img src="assets/img/BM_Logo.png" alt="" /> -->
+					<!--<h1>Beautiful Me Medical Spa<span>.</span></h1>-->
+				</a>
+
+				<nav id="navbar" class="navbar">
+					<ul>
+						<li>
+							<a class="nav-link scrollto" href="#">Home</a>
+						</li>
+						<li>
+							<a class="nav-link scrollto" href="index.html#services"
+								>Services</a
+							>
+						</li>
+
+						<li class="dropdown">
+							<a href="#services">
+								<span>Injectables</span>
+								<i class="bi bi-chevron-down dropdown-indicator"></i>
+							</a>
+							<ul>
+								<li class="dropdown">
+									<a href="#services">
+										<span>Neuro Modulators</span>
+										<i class="bi bi-chevron-down dropdown-indicator"></i>
+									</a>
+									<ul>
+										<li><a href="#services">Botox</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#services">
+										<span>Fillers</span>
+										<i class="bi bi-chevron-down dropdown-indicator"></i>
+									</a>
+									<ul>
+										<li><a href="#services">Voluma</a></li>
+										<li><a href="#services">Juvederm</a></li>
+										<li><a href="#services">Beloterro</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#services">
+										<span>Lipotropics</span>
+										<i class="bi bi-chevron-down dropdown-indicator"></i>
+									</a>
+									<ul>
+										<li><a href="#services">Submental</a></li>
+										<li><a href="#services">Body</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#services">
+										<span>PDO Threads</span>
+										<i class="bi bi-chevron-down dropdown-indicator"></i>
+									</a>
+									<ul>
+										<li><a href="#services">Full Face Lift</a></li>
+										<li><a href="#services">Half Face Lift</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a href="#services">
+										<span>PRP</span>
+										<i class="bi bi-chevron-down dropdown-indicator"></i>
+									</a>
+									<ul>
+										<li><a href="#services">Microneedling</a></li>
+										<li><a href="#services">Injections</a></li>
+										<li><a href="#services">Hair Restoration</a></li>
+									</ul>
+								</li>
+
+								<li><a href="#services">Exosome</a></li>
+								<li><a href="#services">Microneedling</a></li>
+							</ul>
+						</li>
+
+						<li>
+							<a class="nav-link scrollto" href="index.html#about">About</a>
+						</li>
+						<!--<li>
+						<a class="nav-link scrollto" href="index.html#portfolio"
+							>Portfolio</a
+						>
+					</li>-->
+
+						<li>
+							<a class="nav-link scrollto" href="index.html#team">Team</a>
+						</li>
+						<li>
+							<a class="nav-link scrollto" href="index.html#contact">Contact</a>
+						</li>
+					</ul>
+					<i class="bi bi-list mobile-nav-toggle d-none"></i>
+				</nav>
+				<!-- .navbar -->
+				<!-- <a
+				class="btn-getstarted scrollto"
+				href="https://mdwareonline.com/juluhuanginc/sign-in"
+				target="_blank"
+				>Book Now</a
+			> -->
+			</div>
+		</header>
+		<!-- End Header -->
+
+		<section id="hero-fullscreen" class="hero-fullscreen d-flex">
+			<div
+				class="container d-flex flex-column position-relative"
+				data-aos="zoom-out"
+			>
+				<div class="imgcontainer">
+					<img src="assets/img/logo_bm.png" alt="" />
+				</div>
+
+				<!--<h2>Welcome to <span>Beautiful Me Medical Spa </span></h2>
+			<p>Timeless Beauty With An Artistic Touch</p>-->
+				<!--<div class="d-flex">
+				<a href="#about" class="btn-get-started scrollto">Get Started</a>
+				<a href="https://www.youtube.com/watch?v=LXb3EKWsInQ"
+				   class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+			</div>-->
+			</div>
+		</section>
+
+		<main id="main">
+			<!--PUt injectibles in the middle-->
+			<!-- ======= Featured Services Section ======= -->
+			<!-- ======= Services Section ======= -->
+			<section style="background-color: #1b474d">
+				<div style="text-align: center">
+					<h3 style="font-size: 42px; color: white; font-weight: 600">
+						Beautiful Me Medical Spa: Timeless Beauty With An Artistic Touch
+					</h3>
+				</div>
+			</section>
+			<!-- ======= On Focus Section ======= -->
+			<section id="services" class="onfocus">
+				<div class="container-fluid p-0" data-aos="fade-up">
+					<div class="row g-0">
+						<div class="col-sm-6">
+							<img
+								src="assets/img/Photos/Transformation/Transformation_Exosome.jpg"
+								class="img-fluid servicesimg"
+								alt=""
+							/>
+							<!--<a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox"></a>-->
+						</div>
+						<div class="col-sm-6">
+							<div
+								class="content d-flex flex-column justify-content-center h-100"
+							>
+								<center><h1>Injectables</h1></center>
+								<div id="injectablesContent" class="injectables-content">
+									<ul>
+										<li class="topic" onclick="toggleSubContent(this)">
+											Neuro Modulators
+											<i class="bi bi-chevron-down dropdown-indicator"></i>
+											<ul class="sub-content" style="display: none">
+												<li>Botox - $14/unit</li>
+											</ul>
+										</li>
+										<li class="topic" onclick="toggleSubContent(this)">
+											Fillers
+											<i class="bi bi-chevron-down dropdown-indicator"></i>
+											<ul class="sub-content" style="display: none">
+												<li>Voluma - $1000/syring</li>
+												<li>Juvederm - $650/syring</li>
+												<li>Beloterro - $650/syring</li>
+											</ul>
+										</li>
+										<li class="topic" onclick="toggleSubContent(this)">
+											Lipotropics
+											<i class="bi bi-chevron-down dropdown-indicator"></i>
+											<ul class="sub-content" style="display: none">
+												<li>Submental - $150/ml</li>
+												<li>Body - $125/ml</li>
+											</ul>
+										</li>
+										<li class="topic" onclick="toggleSubContent(this)">
+											PDO Threads
+											<i class="bi bi-chevron-down dropdown-indicator"></i>
+											<ul class="sub-content" style="display: none">
+												<li>Full Face lift - $2500</li>
+												<li>Half Face lift - $1500</li>
+											</ul>
+										</li>
+										<li class="topic" onclick="toggleSubContent(this)">
+											PRP
+											<i class="bi bi-chevron-down dropdown-indicator"></i>
+											<ul class="sub-content" style="display: none">
+												<li>Microneedling - $900</li>
+												<li>Injections - $800</li>
+												<li>Hair Restoration - $1200</li>
+											</ul>
+										</li>
+										<li class="topic" onclick="toggleSubContent(this)">
+											Exosome
+											<i class="bi bi-chevron-down dropdown-indicator"></i>
+											<ul class="sub-content" style="display: none">
+												<li>$1200</li>
+											</ul>
+										</li>
+										<li class="topic" onclick="toggleSubContent(this)">
+											Microneedling
+											<i class="bi bi-chevron-down dropdown-indicator"></i>
+											<ul class="sub-content" style="display: none">
+												<li>$600/session</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End On Focus Section -->
+
+			<!-- End Services Section -->
+			<!-- ======= About Section ======= -->
+			<section id="about" class="about" style="background-color: #1b474d">
+				<div class="container" data-aos="fade-up">
+					<div class="section-header">
+						<h2 style="color: white">About Us</h2>
+						<p>
+							Beautiful Me Medical Spa is a unique sanctuary dedicated to
+							transformative, non-surgical rejuvenation. We specialize in
+							innovative combination therapies in medical aesthetics, blending
+							the latest in Soft Surgery and Anti-Aging/Regenerative Medicine.
+						</p>
+					</div>
+
+					<div class="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="200">
+						<!-- <div class="col-lg-5">
+						<div class="about-img">
+							<img
+								src="assets/img/Photos/PCT_0032.jpg"
+								class="img-fluid"
+								alt=""
+							/>
+						</div>
+					</div> -->
+
+						<div class="col">
+							<h3 class="pt-0 pt-lg-5" style="color: white">
+								Why Choose Beautiful Me Medical Spa?
+							</h3>
+
+							<div class="tab-content">
+								<div class="tab-pane fade show active" id="tab1">
+									<div class="d-flex align-items-center mt-4">
+										<i class="bi bi-check2" style="color: white"></i>
+										<h4 style="color: white">
+											Personalized Care by an expert Practitioner.
+										</h4>
+									</div>
+									<p style="color: #dadbdb; font-size: 16px; font-weight: 500">
+										Enjoy the undivided attention of Ju-Lu Huang, FNP-BC, whose
+										medical proficiency and artistic flair ensure a unique,
+										customized experience.
+									</p>
+
+									<div class="d-flex align-items-center mt-4">
+										<i class="bi bi-check2" style="color: white"></i>
+										<h4 style="color: white">A Blend of Art and Science</h4>
+									</div>
+									<p style="color: #dadbdb; font-size: 16px; font-weight: 500">
+										Leveraging a decade of artistic training and top-tier
+										medical education, our treatments are grounded in scientific
+										excellence and aesthetic precision.
+									</p>
+
+									<div class="d-flex align-items-center mt-4">
+										<i class="bi bi-check2" style="color: white"></i>
+										<h4 style="color: white">
+											Commitment to Safety and Efficacy
+										</h4>
+									</div>
+									<p style="color: #dadbdb; font-size: 16px; font-weight: 500">
+										We prioritize your well-being, offering safe, FDA- approved
+										procedures with proven results.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End About Section -->
+			<section id="team" class="team">
+				<div class="container" data-aos="fade-up">
+					<div class="section-header">
+						<h2>About Me</h2>
+					</div>
+					<div class="row gy-5">
+						<div class="col d-flex" data-aos="zoom-in" data-aos-delay="200">
+							<div class="team-member">
+								<div class="member-img">
+									<img
+										src="assets/img/Photos/JuLu.jpg"
+										class="img-fluid"
+										alt=""
+									/>
+								</div>
+								<div class="member-info">
+									<div class="social">
+										<a href=""><i class="bi bi-twitter"></i></a>
+										<a href=""><i class="bi bi-facebook"></i></a>
+										<a href=""><i class="bi bi-instagram"></i></a>
+										<a href=""><i class="bi bi-linkedin"></i></a>
+									</div>
+									<h4>Ju-Lu Huang</h4>
+									<span>FNP-BC</span>
+								</div>
+							</div>
+						</div>
+						<div
+							class="col d-flex content_center"
+							data-aos="zoom-in"
+							data-aos-delay="200"
+						>
+							<br />
+							<p class="phototext" style="font-size: 28px; font-weight: 600">
+								As a Yale-trained Nurse Practitioner, Ju-Lu Huang, FNP-BC,
+								masterfully blends art and science in medical aesthetics. With
+								ten years of artistic training and specialized education in
+								anti-aging, regenerative, and procedural medicine, Ju-Lu excels
+								in using combination therapy to enhance your unique beauty. Her
+								approach is gentle, yet transformative, enhancing your inherent
+								beauty for you to celebrate.
+							</p>
+						</div>
+						<!-- End Team Member -->
+					</div>
+				</div>
+			</section>
+			<!-- ======= Call To Action Section ======= -->
+			<section id="cta" class="cta">
+				<div
+					class="container"
+					data-aos="zoom-out"
+					style="background-color: #1b474d"
+				>
+					<div class="row g-5">
+						<div
+							class="col-lg-8 col-md-6 content d-flex flex-column justify-content-center order-last order-md-first"
+						>
+							<h3 style="color: white">
+								Start Your <em>Transformation</em> Today
+							</h3>
+							<p style="color: #dadbdb">
+								Embrace a new era of ageless beauty with Beautiful Me Medical
+								Spa – where every treatment is a masterpiece.
+							</p>
+							<a
+								class="cta-btn btn-getstarted align-self-start"
+								href="https://mdwareonline.com/juluhuanginc/sign-in"
+								target="_blank"
+								>Book a Free Consultation</a
+							>
+						</div>
+
+						<div class="col-lg-4 col-md-6 order-first order-md-last d-flex align-items-center">
+							
+
+							<div class="slideshow-container">
+								<div class="mySlides fade">
+									<div class="numbertext">1 / 12</div>
+									<img src="assets/img/Photos/Transformation/Transformation_Exosome.jpg" style="width:100%">
+									<div class="slidertext">Exosome: One treatment, 21 days after</div>
+
+								</div>
+								<div class="mySlides fade">
+									<div class="numbertext">2 / 12</div>
+									<img src="assets/img/Photos/Transformation/Transformation_Exosome_2.jpg" style="width:100%">
+									<div class="slidertext">Exosome: One treatment, 21 days after</div>
+
+								</div>
+								<div class="mySlides fade">
+									<div class="numbertext">3 / 12</div>
+									<img src="assets/img/Photos/Transformation/Transformation_Combination_1.jpg"
+										 alt="Combination Therapy Image" style="width:100%">
+									<div class="slidertext">
+										Combination Therapy: Dermal Filler and PDO Threads. One
+										Treatment, Same Day
+									</div>
+
+								</div>
+								<div class="mySlides fade">
+									<div class="numbertext">4 / 12</div>
+									<img src="assets/img/Photos/Transformation/Transformation_Combination_2.jpg" style="width:100%">
+									<div class="slidertext">
+										Combination Therapy: Dermal Filler and PDO Threads. One
+										Treatment, Same Day
+									</div>
+
+								</div>
+								<div class="mySlides fade">
+									<div class="numbertext">5 / 12</div>
+									<img src="assets/img/Photos/Transformation/Transformation_Combination_3.jpg" alt="Combination Therapy Image" style="width:100%">
+									<div class="slidertext">
+										Combination Therapy: Dermal Filler and PDO Threads. One
+										Treatment, Same Day
+									</div>
+
+								</div>
+								<div class="mySlides fade">
+									<div class="numbertext">6 / 12</div>
+									<img src="assets/img/Photos/Transformation/Transformation_Combination_4.jpg"
+										 alt="Combination Therapy Image" style="width:100%">
+									<div class="slidertext">
+										Combination Therapy: Dermal Filler and PDO Threads. One
+										Treatment, Same Day
+									</div>
+
+								</div>
+
+
+								<div class="mySlides fade">
+									<div class="numbertext">7 / 12</div>
+									<img src="assets/img/Photos/Transformation/Transformation_Fillers_1.jpg"
+										 alt="Dermal Filler Image" style="width:100%">
+									<div class="slidertext">Dermal Filler: Same Day</div>
+
+								</div>
+								<div class="mySlides fade">
+									<div class="numbertext">8 / 12</div>
+									<img src="assets/img/Photos/Transformation/Transformation_Fillers_2.jpg" style="width:100%">
+									<div class="slidertext">Dermal Filler: Same Day</div>
+
+								</div>
+								<div class="mySlides fade">
+									<div class="numbertext">9 / 12</div>
+									<img src="assets/img/Photos/Transformation/Transformation_Dermal.jpg"
+										 alt="Dermal Filler Image" style="width:100%">
+									<div class="slidertext">Dermal Filler: Same Day</div>
+
+								</div>
+
+								<div class="mySlides fade">
+									<div class="numbertext">10 / 12</div>
+									<img src="assets/img/Photos/Transformation/Transformation_Botox_1.jpg" alt="Botox Image" style="width:100%">
+									<div class="slidertext">Botox</div>
+
+								</div>
+								<div class="mySlides fade">
+									<div class="numbertext">11 / 12</div>
+									<img src="assets/img/Photos/Transformation/Transformation_Botox_2.jpg" alt="Botox Image" style="width:100%">
+									<div class="slidertext">Botox</div>
+
+								</div>
+
+
+								<div class="mySlides fade">
+									<div class="numbertext">12 / 12</div>
+									<img src="assets/img/Photos/Transformation/Transformation_LipFiller.jpg"
+										 alt="Lip Filler Image" style="width:100%">
+									<div class="slidertext">Lip Filler: Same Day</div>
+
+								</div>
+
+
+							</div>
+							<br>
+
+							<div style="text-align:center">
+								<span class="dot"></span>
+								<span class="dot"></span>
+								<span class="dot"></span>
+								<span class="dot"></span>
+								<span class="dot"></span>
+								<span class="dot"></span>
+								<span class="dot"></span>
+								<span class="dot"></span>
+								<span class="dot"></span>
+								<span class="dot"></span>
+								<span class="dot"></span>
+								<span class="dot"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End Call To Action Section -->
+			<!-- ======= Contact Section ======= -->
+			<section id="contact" class="contact">
+				<div class="map">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3173.009767959568!2d-121.96979928472237!3d37.25669097985869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808e34a6e4a9c6cf%3A0x6c32f95f18b9f7dd!2s14901%20National%20Ave%20Suite%20204%2C%20Los%20Gatos%2C%20CA%2095032!5e0!3m2!1sen!2sus!4v1660145568826!5m2!1sen!2sus"
+						frameborder="0"
+						allowfullscreen
+					></iframe>
+				</div>
+				<!-- End Google Maps -->
+
+				<div class="container">
+					<div class="row gy-5 gx-lg-5">
+						<div class="col-lg-12">
+							<div class="info">
+								<h3>Get in touch</h3>
+								<!-- <p>
+								Et id eius voluptates atque nihil voluptatem enim in tempore
+								minima sit ad mollitia commodi minus.
+							</p> -->
+
+								<div class="info-item d-flex">
+									<i class="bi bi-geo-alt flex-shrink-0"></i>
+									<div>
+										<h4>Location 1:</h4>
+										<p>43625 Mission Blvd #107, #102, Fremont, CA 94539</p>
+									</div>
+								</div>
+								<div class="info-item d-flex">
+									<i class="bi bi-geo-alt flex-shrink-0"></i>
+									<div>
+										<h4>Location 2:</h4>
+										<p>14901 National Ave Suite 204, Los Gatos, CA 95032</p>
+									</div>
+								</div>
+								<!-- End Info Item -->
+
+								<div class="info-item d-flex">
+									<i class="bi bi-envelope flex-shrink-0"></i>
+									<div>
+										<h4>Email:</h4>
+										<p>Ju-Lu.BeautifulMe@outlook.com</p>
+									</div>
+								</div>
+								<!-- End Info Item -->
+
+								<div class="info-item d-flex">
+									<i class="bi bi-phone flex-shrink-0"></i>
+									<div>
+										<h4>Call:</h4>
+										<p>+1 650 773 8048</p>
+									</div>
+								</div>
+								<!-- End Info Item -->
+							</div>
+						</div>
+
+						<!--<div class="col-lg-8">
+						<form
+							action="forms/contact.php"
+							method="post"
+							role="form"
+							class="php-email-form"
+						>
+							<div class="row">
+								<div class="col-md-6 form-group">
+									<input
+										type="text"
+										name="name"
+										class="form-control"
+										id="name"
+										placeholder="Your Name"
+										required
+									/>
+								</div>
+								<div class="col-md-6 form-group mt-3 mt-md-0">
+									<input
+										type="email"
+										class="form-control"
+										name="email"
+										id="email"
+										placeholder="Your Email"
+										required
+									/>
+								</div>
+							</div>
+							<div class="form-group mt-3">
+								<input
+									type="text"
+									class="form-control"
+									name="subject"
+									id="subject"
+									placeholder="Subject"
+									required
+								/>
+							</div>
+							<div class="form-group mt-3">
+								<textarea
+									class="form-control"
+									name="message"
+									placeholder="Message"
+									required
+								></textarea>
+							</div>
+							<div class="my-3">
+								<div class="loading">Loading</div>
+								<div class="error-message"></div>
+								<div class="sent-message">
+									Your message has been sent. Thank you!
+								</div>
+							</div>
+							<div class="text-center">
+								<button type="submit">Send Message</button>
+							</div>
+						</form>
+					</div>-->
+						<!-- End Contact Form -->
+					</div>
+				</div>
+			</section>
+			<!-- End Contact Section -->
+		</main>
+		<!-- End #main -->
+		<!-- ======= Footer ======= -->
+		<footer id="footer" class="footer">
+			<div class="footer-content">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-6">
+							<div class="footer-info">
+								<h3>Beautiful Me Medical Spa</h3>
+								<!-- <p>
+								A108 Adam Street <br />
+								NY 535022, USA<br /><br />
+								<strong>Phone:</strong> +1 5589 55488 55<br />
+								<strong>Email:</strong> juluhuang@gmail.com<br />
+							</p> -->
+							</div>
+						</div>
+
+						<div class="col-lg-2 col-md-6 footer-links">
+							<h4>Useful Links</h4>
+							<ul>
+								<li>
+									<i class="bi bi-chevron-right"></i> <a href="#">Home</a>
+								</li>
+								<li>
+									<i class="bi bi-chevron-right"></i>
+									<a href="#about">About us</a>
+								</li>
+								<li>
+									<i class="bi bi-chevron-right"></i>
+									<a href="#services">Services</a>
+								</li>
+								<li>
+									<i class="bi bi-chevron-right"></i>
+									<a href="#team">About Me</a>
+								</li>
+								<li>
+									<i class="bi bi-chevron-right"></i>
+									<a href="#contact">Location</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="col-lg-3 col-md-6 footer-links">
+							<h4>Our Services</h4>
+							<ul>
+								<li>
+									<!--<i class="bi bi-chevron-right"></i>-->
+									<a href="#">Injectables</a>
+								</li>
+								<!--<li>
+								<i class="bi bi-chevron-right"></i>
+								<a href="#">Laser</a>
+							</li>
+							<li>
+								<i class="bi bi-chevron-right"></i>
+								<a href="#">Medical</a>
+							</li>-->
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-legal text-center">
+				<div
+					class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center"
+				>
+					<div
+						class="d-flex flex-column align-items-center align-items-lg-start"
+					>
+						<div class="copyright">
+							&copy; Copyright
+							<strong><span>Beautiful Me Medical Spa</span></strong
+							>. All Rights Reserved
+						</div>
+						<div class="credits">
+							<!-- All the links in the footer should remain intact. -->
+							<!-- You can delete the links only if you purchased the pro version. -->
+							<!-- Licensing information: https://bootstrapmade.com/license/ -->
+							<!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/herobiz-bootstrap-business-template/ -->
+							<!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+						</div>
+					</div>
+
+					<div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+						<a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+						<a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+						<a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+						<!-- <a href="#" class="google-plus"><i class="bi bi-skype"></i></a> -->
+						<a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- End Footer -->
+
+		<a
+			href="#"
+			class="scroll-top d-flex align-items-center justify-content-center"
+		>
+			<i class="bi bi-arrow-up-short"></i>
+		</a>
+
+		<div id="preloader"></div>
+
+		<!-- Vendor JS Files -->
+		<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="assets/vendor/aos/aos.js"></script>
+		<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+		<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+		<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+		<script src="assets/vendor/php-email-form/validate.js"></script>
+
+		<!-- Template Main JS File -->
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/list.js"></script>
+	</body>
 </html>
